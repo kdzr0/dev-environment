@@ -89,10 +89,10 @@ return {
 			},
 			signs = {
 				text = {
-					[severity.ERROR] = " ",
-					[severity.WARN] = " ",
-					[severity.HINT] = "󰠠 ",
-					[severity.INFO] = " ",
+					[severity.ERROR] = "󰅚 ",
+					[severity.WARN] = "󰀪 ",
+					[severity.HINT] = "󰌶 ",
+					[severity.INFO] = "󰋽 ",
 				},
 			},
 		})

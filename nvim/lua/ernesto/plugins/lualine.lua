@@ -8,6 +8,7 @@ return {
 		lualine.setup({
 			options = {
 				theme = "rose-pine",
+				ignore_focus = { "NvimTree" },
 			},
 			sections = {
 				lualine_a = {
