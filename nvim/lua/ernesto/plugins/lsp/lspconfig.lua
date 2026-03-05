@@ -79,22 +79,5 @@ return {
 				keymap.set("n", "<leader>rs", "<cmd>LspRestart<CR>", opts)
 			end,
 		})
-
-		local severity = vim.diagnostic.severity
-
-		vim.diagnostic.config({
-			virtual_text = {
-				source = true,
-				prefix = " ●",
-			},
-			signs = {
-				text = {
-					[severity.ERROR] = "󰅚 ",
-					[severity.WARN] = "󰀪 ",
-					[severity.HINT] = "󰌶 ",
-					[severity.INFO] = "󰋽 ",
-				},
-			},
-		})
 	end,
 }
