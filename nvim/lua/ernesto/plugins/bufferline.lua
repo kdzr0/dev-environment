@@ -25,8 +25,13 @@ return {
 
 				diagnostics = "nvim_lsp",
 				diagnostics_indicator = function(count, level)
-					local icon = level:match("error") and " " or (level:match("warn") and " " or " ")
-					return " " .. icon .. count
+					local icons = {
+						error = "󰅚 ",
+						warning = "󰀪 ",
+						info = "󰋽 ",
+						hint = "󰌶 ",
+					}
+					return icons[level] and icons[level] .. count or ""
 				end,
 			},
 		})
