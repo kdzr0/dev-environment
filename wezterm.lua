@@ -10,15 +10,15 @@ config.font = wezterm.font("Maple Mono NF")
 config.font_size = 14.0
 
 -- Default theme
-config.color_scheme = "rose-pine"
+config.color_scheme = "Catppuccin Mocha"
 
 -- Window configuration
 config.window_decorations = "RESIZE"
 config.window_padding = {
-	left = 10,
-	right = 10,
-	top = 10,
-	bottom = 10,
+  left = 10,
+  right = 10,
+  top = 10,
+  bottom = 10,
 }
 config.initial_cols = 128
 config.initial_rows = 32

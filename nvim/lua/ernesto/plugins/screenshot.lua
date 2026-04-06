@@ -1,13 +1,11 @@
 return {
 	"glyccogen/imprint.nvim",
+	dependencies = { "nvim-tree/nvim-web-devicons" },
 	cmd = "Imprint",
-	dependencies = {
-		"nvim-tree/nvim-web-devicons",
-	},
 	config = function()
 		require("imprint").setup({
 			output_dir = "/mnt/c/Users/KDZERO-PC/Downloads/",
-			background = "#232136",
+			background = "#1e1e2e",
 		})
 	end,
 }
