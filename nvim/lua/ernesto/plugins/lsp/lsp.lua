@@ -18,7 +18,7 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		dependencies = { "mason-org/mason.nvim", "neovim/nvim-lspconfig" },
 		opts = {
-			ensure_installed = { "clangd", "pyright", "lua_ls", "marksman" },
+			ensure_installed = { "jdtls", "clangd", "pyright", "lua_ls", "marksman" },
 		},
 	},
 	{
@@ -58,7 +58,7 @@ return {
 				},
 			})
 			vim.lsp.config("marksman", {
-				filetypes = { "markdown", "markdown.mdx" },
+				filetypes = { "markdown" },
 			})
 
 			vim.api.nvim_create_autocmd("LspProgress", {
