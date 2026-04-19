@@ -87,8 +87,9 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		cmd = "Imprint",
 		config = function()
+			vim.cmd("packadd nvim.tohtml")
 			require("imprint").setup({
-				output_dir = "/mnt/c/Users/KDZERO-PC/Downloads/",
+				output_dir = "/mnt/c/Users/" .. os.getenv("USER") .. "/Downloads/",
 				background = "#1e1e2e",
 			})
 		end,
